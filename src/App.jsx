@@ -1,10 +1,13 @@
 import { useState } from "react";
-import "./App.css";
+import Background from "./Background";
 
 function App() {
   return (
     <div>
-      <h1>Välkommen till cyberfortet.se, hemsidan är under konstruktion</h1>
+      <Background />
+      <h1 className="text-white text-6xl text-center fixed mt-[20%]">
+        Välkommen till cyberfortet.se, hemsidan är under konstruktion
+      </h1>
     </div>
   );
 }
