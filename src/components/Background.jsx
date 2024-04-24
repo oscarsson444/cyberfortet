@@ -1,9 +1,9 @@
 function Background({ children }) {
   return (
-    <div className="absolute -z-10">
+    <div className="">
       <img
-        src="/images/background/full_bg.png"
-        className="self-cover self-center w-screen"
+        src="/images/background/rotating_earth.gif"
+        className="self-center"
       />
     </div>
   );
