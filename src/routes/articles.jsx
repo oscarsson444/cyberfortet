@@ -4,7 +4,7 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 export default function Articles() {
   const location = useLocation();
   return (
-    <div>
+    <div className="w-full">
       {location.pathname === "/articles" && (
         <div className="text-white mt-5 md:mt-20 px-2 grid grid-cols-1 gap-4 md:grid-cols-3">
           {articles.map((article, index) => (
@@ -20,7 +20,9 @@ export default function Articles() {
           ))}
         </div>
       )}
-      <Outlet />
+      <div className="w-full items-center justify-center flex mt-10">
+        <Outlet />
+      </div>
     </div>
   );
 }
