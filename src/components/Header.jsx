@@ -5,12 +5,12 @@ export default function Header() {
   const location = useLocation();
   return (
     <header className="sticky top-0 w-full bg-white/30">
-      <nav className="flex flex-row  h-20 items-center justify-center">
+      <nav className="flex flex-row  h-20 items-center justify-center text-white">
         <Link
           to="/"
           className={`p-2 ${
             location.pathname === "/" ? "underline text-[#77cfb9]" : ""
-          } text-white hover:text-gray-300`}
+          } hover:text-gray-300`}
         >
           Home
         </Link>
@@ -18,7 +18,7 @@ export default function Header() {
           to="/about"
           className={`p-2 ${
             location.pathname === "/about" ? "underline text-[#77cfb9]" : ""
-          } text-white hover:text-gray-300`}
+          } hover:text-gray-300`}
         >
           About
         </Link>
@@ -26,7 +26,7 @@ export default function Header() {
           to="/articles"
           className={`p-2 ${
             location.pathname === "/articles" ? "underline text-[#77cfb9]" : ""
-          } text-white hover:text-gray-300`}
+          } hover:text-gray-300`}
         >
           Articles
         </Link>
