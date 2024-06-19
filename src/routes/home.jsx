@@ -1,9 +1,11 @@
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import HomeMenu from "../components/HomeMenu";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const [isScrolledDown, setIsScrolledDown] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,10 +26,10 @@ export default function Home() {
 
   return (
     <div className="text-white w-full justify-center flex flex-col text-center">
-      <div className="h-screen flex w-full justify-center flex-col text-center">
+      <div className="h-screen flex w-full mt-5 flex-col text-center">
         <div className="flex flex-col justify-center items-center overflow-hidden mb-10">
-          <h1 className="text-4xl sm:text-6xl">Välkommen till Cyberfortet</h1>
-          <h2 className="text-3xl sm:text-5xl">Din guide i cyberrymden</h2>
+          <h1 className="text-4xl sm:text-6xl">{t("welcome-1")}</h1>
+          <h2 className="text-3xl sm:text-5xl">{t("welcome-2")}</h2>
         </div>
         <img
           src="/images/background/rotating_earth.gif"

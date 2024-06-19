@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Header() {
   const location = useLocation();
@@ -8,7 +9,7 @@ export default function Header() {
         <Link
           to="/"
           className={`p-2 ${
-            location.pathname === "/" ? "underline text-[#6fbdaa]" : ""
+            location.pathname === "/" ? "underline text-[#77cfb9]" : ""
           } text-white hover:text-gray-300`}
         >
           Home
@@ -16,7 +17,7 @@ export default function Header() {
         <Link
           to="/about"
           className={`p-2 ${
-            location.pathname === "/about" ? "underline text-[#6fbdaa]" : ""
+            location.pathname === "/about" ? "underline text-[#77cfb9]" : ""
           } text-white hover:text-gray-300`}
         >
           About
@@ -24,7 +25,7 @@ export default function Header() {
         <Link
           to="/articles"
           className={`p-2 ${
-            location.pathname === "/articles" ? "underline text-[#6fbdaa]" : ""
+            location.pathname === "/articles" ? "underline text-[#77cfb9]" : ""
           } text-white hover:text-gray-300`}
         >
           Articles
