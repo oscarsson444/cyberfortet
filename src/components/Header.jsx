@@ -10,6 +10,9 @@ export default function Header() {
         <Link to="/about" className="p-2 text-white hover:text-gray-300">
           About
         </Link>
+        <Link to="/articles" className="p-2 text-white hover:text-gray-300">
+          Articles
+        </Link>
       </nav>
     </header>
   );

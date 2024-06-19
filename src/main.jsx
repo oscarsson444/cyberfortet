@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page.jsx";
 import "./index.css";
 import About from "./routes/about.jsx";
-import Terminal from "./routes/terminal.jsx";
+import Articles from "./routes/articles.jsx";
 import Home from "./routes/home.jsx";
 import Root from "./routes/root.jsx";
 
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "terminal",
-        element: <Terminal />,
+        path: "articles",
+        element: <Articles />,
       },
     ],
   },
