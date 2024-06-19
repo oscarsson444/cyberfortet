@@ -27,4 +27,8 @@
   .home-menu-item {
     @apply cursor-pointer flex flex-col p-2 bg-black/20 rounded-xl hover:bg-black/40;
   }
+
+  .article-card {
+    @apply cursor-pointer flex flex-col p-2 bg-black/20 rounded-xl hover:bg-black/40;
+  }
 }

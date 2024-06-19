@@ -7,6 +7,7 @@ import About from "./routes/about.jsx";
 import Articles from "./routes/articles.jsx";
 import Home from "./routes/home.jsx";
 import Root from "./routes/root.jsx";
+import SubnetMask from "./articles/subnet-mask.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,12 @@ const router = createBrowserRouter([
       {
         path: "articles",
         element: <Articles />,
+        children: [
+          {
+            path: "subnet-mask",
+            element: <SubnetMask />,
+          },
+        ],
       },
     ],
   },
