@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Star from "../components/Star";
+import { FaGithub } from "react-icons/fa";
 
 export default function About() {
   const [stars, setStars] = useState([]);
@@ -43,7 +44,7 @@ export default function About() {
               Målet med hemsidan är att skriva om olika koncept inom IT som jag
               själv vill lära mig mer om. Det kan vara allt från projekt med en
               Raspberry Pi till en detaljerad guide om en CTF utmaning. Nedan
-              följer lite information om min utbildning och deltidsjobb.
+              följer lite information om min utbildning och tidigare jobb.
               <br />
               <br />
             </p>
@@ -144,6 +145,15 @@ export default function About() {
                   <p className="hidden md:block underline">
                     oscarsson444@gmail.com
                   </p>
+                </Link>
+                <Link
+                  to="https://github.com/oscarsson444"
+                  className="flex flex-row items-center gap-4 cursor-pointer"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub className="w-10 h-10" />
+                  <p className="hidden md:block underline">oscarsson444</p>
                 </Link>
               </div>
             </div>

@@ -9,15 +9,15 @@ export default function HomeMenu() {
     <div className="flex justify-center items-center">
       <div className="grid grid-cols-2 gap-10">
         <div className="home-menu-item">
-          <Link to="/portfolio">
-            <PiSuitcase className="w-20 h-20 mx-auto" />
-            <p>Portfolio</p>
+          <Link to="/articles">
+            <GrArticle className="w-20 h-20 mx-auto" />
+            <p>Artiklar</p>
           </Link>
         </div>
         <div className="home-menu-item">
           <Link to="/about">
             <BsPerson className="w-20 h-20 mx-auto" />
-            <p>About</p>
+            <p>Om mig</p>
           </Link>
         </div>
       </div>

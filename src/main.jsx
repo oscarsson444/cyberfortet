@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PythonKeylogger from "./articles/python-keylogger.jsx";
 import ErrorPage from "./error-page.jsx";
-import "./index.css";
 import "./i18n/i18n";
+import "./index.css";
 import About from "./routes/about.jsx";
 import Articles from "./routes/articles.jsx";
 import Home from "./routes/home.jsx";
-import Root from "./routes/root.jsx";
-import SubnetMask from "./articles/subnet-mask.jsx";
 import Portfolio from "./routes/portfolio.jsx";
+import Root from "./routes/root.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
         element: <Articles />,
         children: [
           {
-            path: "subnet-mask",
-            element: <SubnetMask />,
+            path: "python-keylogger",
+            element: <PythonKeylogger />,
           },
         ],
       },

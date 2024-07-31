@@ -2,35 +2,12 @@ import SubnetMask from "./subnet-mask";
 
 export const articles = [
   {
-    name: "Subnet Mask",
-    description: "Subnet mask",
-    wordCount: 100,
-    estRead: 1,
-    created: "2024-06-19",
-    url: "/articles/subnet-mask",
-  },
-  {
-    name: "ARP (TODO)",
-    description: "Protocol used to resolve IP addresses into MAC addresses",
-    wordCount: 100,
-    estRead: 1,
-    created: "2024-06-20",
-    url: "/articles/subnet-mask",
-  },
-  {
-    name: "Default Gateway (TODO)",
-    description: "Protocol used to resolve IP addresses into MAC addresses",
-    wordCount: 100,
-    estRead: 1,
-    created: "2024-06-20",
-    url: "/articles/subnet-mask",
-  },
-  {
-    name: "NAT (TODO)",
-    description: "Protocol used to resolve IP addresses into MAC addresses",
-    wordCount: 100,
-    estRead: 1,
-    created: "2024-06-20",
-    url: "/articles/subnet-mask",
+    name: "Keylogger med Python",
+    description:
+      "En länk till en Medium artikel jag skrev om hur man kan göra en keylogger med hjälp av Python.",
+    wordCount: 1966,
+    estRead: 9,
+    created: "2023-09-10",
+    url: "/articles/python-keylogger",
   },
 ];

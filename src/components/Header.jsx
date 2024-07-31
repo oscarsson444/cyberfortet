@@ -12,15 +12,15 @@ export default function Header() {
             location.pathname === "/" ? "underline text-[#77cfb9]" : ""
           } hover:text-gray-300`}
         >
-          Home
+          Hem
         </Link>
         <Link
-          to="/portfolio"
+          to="/articles"
           className={`p-2 ${
-            location.pathname === "/portfolio" ? "underline text-[#77cfb9]" : ""
+            location.pathname === "/articles" ? "underline text-[#77cfb9]" : ""
           } hover:text-gray-300`}
         >
-          Portfolio
+          Artiklar
         </Link>
         <Link
           to="/about"
@@ -28,16 +28,8 @@ export default function Header() {
             location.pathname === "/about" ? "underline text-[#77cfb9]" : ""
           } hover:text-gray-300`}
         >
-          About
+          Om mig
         </Link>
-        {/* <Link
-          to="/articles"
-          className={`p-2 ${
-            location.pathname === "/articles" ? "underline text-[#77cfb9]" : ""
-          } hover:text-gray-300`}
-        >
-          Articles
-        </Link> */}
       </nav>
     </header>
   );
