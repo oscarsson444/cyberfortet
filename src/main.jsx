@@ -9,6 +9,7 @@ import Articles from "./routes/articles.jsx";
 import Home from "./routes/home.jsx";
 import Root from "./routes/root.jsx";
 import SubnetMask from "./articles/subnet-mask.jsx";
+import Portfolio from "./routes/portfolio.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "portfolio",
+        element: <Portfolio />,
       },
       {
         path: "articles",

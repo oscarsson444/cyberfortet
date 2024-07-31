@@ -1,11 +1,19 @@
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <div className="text-white flex flex-col w-full items-center">
-      <div className="bg-black/20 p-10 mt-10 flex flex-col items-center w-4/5">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.5,
+        }}
+        className="bg-black/20 p-10 mt-10 rounded-lg flex flex-col items-center w-4/5"
+      >
         <h4>Hej och välkommen till cyberfortet!</h4>
         <div className="grid md:grid-cols-4 grid-cols-1 mt-5 md:gap-4 ">
           <div className="col-span-3">
@@ -56,7 +64,7 @@ export default function About() {
             alt="Image of author"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
