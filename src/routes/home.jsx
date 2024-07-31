@@ -18,8 +18,8 @@ export default function Home() {
     const starConstant = Math.ceil(documentHeight * documentWidth * 0.00006);
 
     const starsArray = [...Array(starConstant)].map(() => ({
-      top: Math.random() * (documentHeight - 5),
-      left: Math.random() * (documentWidth - 5),
+      top: Math.random() * (documentHeight - 10),
+      left: Math.random() * (documentWidth - 10),
     }));
 
     setStars(starsArray);
@@ -45,12 +45,11 @@ export default function Home() {
   return (
     <div className="text-white w-full text-center">
       <motion.div
-        initial={{ opacity: 0, scale: 0.7 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{
-          duration: 0.5,
+          duration: 1.5,
           delay: 0.2,
-          ease: [0, 0.71, 0.2, 1.01],
         }}
         className="flex h-[calc(100vh-80px)] justify-center w-full flex-col gap-5 text-center"
       >

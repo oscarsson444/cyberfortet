@@ -35,4 +35,8 @@
   .article-background{
     @apply bg-black/20 p-4 rounded-xl text-white;
   }
+
+  .portfolio-card {
+    @apply bg-black/20 backdrop-blur-sm z-10 p-10 rounded-lg flex flex-col items-center w-4/5 gap-4;
+  }
 }
