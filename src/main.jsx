@@ -9,6 +9,7 @@ import About from "./routes/about.jsx";
 import Articles from "./routes/articles.jsx";
 import Home from "./routes/home.jsx";
 import Portfolio from "./routes/portfolio.jsx";
+import Rocket from "./routes/rocket.jsx";
 import Root from "./routes/root.jsx";
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "portfolio",
         element: <Portfolio />,
+      },
+      {
+        path: "rocket",
+        element: <Rocket />,
       },
       {
         path: "articles",
